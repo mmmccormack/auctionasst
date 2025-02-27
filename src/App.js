@@ -22,7 +22,7 @@ const BidStation = () => {
       {'name' : 'Adam', 'bidding' : true},
       {'name' : 'Antony', 'bidding' : true},
       {'name' : 'Curtis', 'bidding' : true},
-      {'name' : 'Dave', 'bidding' : true},
+      {'name' : 'Wilson', 'bidding' : true},
       {'name' : 'Joel', 'bidding' : true},
       {'name' : 'Mike', 'bidding' : true},
       {'name' : 'Pat', 'bidding' : true},

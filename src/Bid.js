@@ -12,7 +12,7 @@ const Bid = () => {
       case 'adam': bidderNumber = '0'; break;
       case 'antony': bidderNumber = '1'; break;
       case 'curtis': bidderNumber = '2'; break;
-      case 'dave': bidderNumber = '3'; break;
+      case 'wilson': bidderNumber = '3'; break;
       case 'joel': bidderNumber = '4'; break;
       case 'mike': bidderNumber = '5'; break;
       case 'pat': bidderNumber = '6'; break;
