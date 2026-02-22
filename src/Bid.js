@@ -12,14 +12,16 @@ const Bid = () => {
       case 'adam': bidderNumber = '0'; break;
       case 'antony': bidderNumber = '1'; break;
       case 'curtis': bidderNumber = '2'; break;
-      case 'wilson': bidderNumber = '3'; break;
+      case 'dave': bidderNumber = '3'; break;
       case 'joel': bidderNumber = '4'; break;
       case 'mike': bidderNumber = '5'; break;
       case 'pat': bidderNumber = '6'; break;
       case 'steve': bidderNumber = '7'; break;
-      case 'tristan': bidderNumber = '8'; break;
-      case 'tyler': bidderNumber = '9'; break;
-      default: bidderNumber = '10'; break;
+      case 'todd': bidderNumber = '8'; break;
+      case 'tristan': bidderNumber = '9'; break;
+      case 'tyler': bidderNumber = '10'; break;
+      case 'wilson': bidderNumber = '11'; break;
+      default: bidderNumber = '12'; break;
   }
 
   const capFirstLetter = nameOfBidder => {
@@ -57,13 +59,13 @@ const Bid = () => {
 
 
     return(
-        <div className="bidTracker">
-            {bidderNumber === '10' ? 
+        <div className="personalBidTracker">
+            {bidderNumber === '12' ? 
                 <h1>You fucked up - reinput your goddamn name the way I goddamn told you to!</h1> 
                 : 
                 <div className={bidding ? 'bidding' : 'notBidding'}>
                     <h1>{capFirstLetter(bidderName)}</h1>
-                    <button className="bidButton" onClick={() => bid(bidderNumber, bidderName)} disabled={bidding ? false : true}>I'm fuckin out</button>
+                    <button className="personalButton" onClick={() => bid(bidderNumber, bidderName)} disabled={bidding ? false : true}>{bidding ? "IN" : "OUT"}</button>
                 </div>
             }
         </div>

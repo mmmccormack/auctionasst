@@ -22,14 +22,15 @@ const BidStation = () => {
       {'name' : 'Adam', 'bidding' : true},
       {'name' : 'Antony', 'bidding' : true},
       {'name' : 'Curtis', 'bidding' : true},
-      {'name' : 'Wilson', 'bidding' : true},
+      {'name' : 'Dave', 'bidding' : true},
       {'name' : 'Joel', 'bidding' : true},
       {'name' : 'Mike', 'bidding' : true},
       {'name' : 'Pat', 'bidding' : true},
       {'name' : 'Steve', 'bidding' : true},
+      {'name' : 'Todd', 'bidding' : true},
       {'name' : 'Tristan', 'bidding' : true},
       {'name' : 'Tyler', 'bidding' : true},
-      {'name' : 'Dummy', 'bidding' : true}
+      {'name' : 'Wilson', 'bidding' : true},
     ]
     setBidders(resetBiddersList)
     
@@ -87,22 +88,24 @@ const BidStation = () => {
   const NONE = { display: 'none' };
 
   return (
-    <div className="bidTracker">
-      <ul className="bidderList">
-        {bidders.map((bidder, index) => {
-          return (
-            <li style={bidder.name === 'Dummy' ? NONE : BLOCK} key={index} className={bidder.bidding ? "bidding" : "notBidding"}>
-              <p className="individualBidder">{bidder.name}</p>
-              <p className="individualBidder">{bidder.bidding ? "IN" : "OUT"}</p>
-            </li>
-          )
-        })}
-      </ul>
-      <div className="timerAndReset">
-        <button className="resetButton" onClick={() => startCountdown() } disabled={timeRunning ? true : false}>Start</button>
-        <div className={timer <= 10 && timer > 5 ? "almostUp" :
-        timer <= 5 || timer === "End" ? "danger" : "timer"}>{timer}</div>
-        <button className="resetButton" onClick={() => resetBidding() } disabled={timeRunning ? false : true}>Stop</button>
+    <div className="wrapper">
+        <div className="bidTracker">
+          <ul className="bidderList">
+            {bidders.map((bidder, index) => {
+              return (
+                <li style={bidder.name === 'Dummy' ? NONE : BLOCK} key={index} className={bidder.bidding ? "bidding" : "notBidding"}>
+                  <p className="individualBidder">{bidder.name}</p>
+                  <p className="individualBidder">{bidder.bidding ? "IN" : "OUT"}</p>
+                </li>
+              )
+            })}
+          </ul>
+          <div className="timerAndReset">
+            <div className={timer <= 15 && timer > 5 ? "almostUp" :
+            timer <= 5 || timer === "End" ? "danger" : "timer"}>{timer}</div>
+            <button className="resetButton" onClick={() => startCountdown() } disabled={timeRunning ? true : false}>Start</button>
+            <button className="resetButton" onClick={() => resetBidding() } disabled={timeRunning ? false : true}>Stop</button>
+          </div>
       </div>
     </div>
   )
