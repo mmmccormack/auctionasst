@@ -36,16 +36,16 @@ h1 {
 .notBidding,
 .bidding {
   text-align: center;
-  padding: 0 20px;
+  padding: 0 4px;
   border-radius: 5px;
   margin: 0px 10px;
   font-weight: 700;
   color: white;
-}
-.notBidding, .bidding {
   border: 3px solid white;
   box-shadow: 4px 4px 1px;
   outline: 2px black inset;
+}
+.notBidding, .bidding {
 }
 .notBidding {
   background-color: red;
@@ -103,4 +103,5 @@ h1 {
 .personalBidTracker .notBidding,
 .personalBidTracker .bidding {
   height: 260px;
+  padding: 0 20px;
 }
