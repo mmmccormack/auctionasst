@@ -10,17 +10,29 @@ const Bid = () => {
 
   switch (bidderName) {
       case 'adam': bidderNumber = '0'; break;
+      case 'Adam': bidderNumber = '0'; break;
       case 'antony': bidderNumber = '1'; break;
+      case 'Antony': bidderNumber = '1'; break;
       case 'curtis': bidderNumber = '2'; break;
+      case 'Curtis': bidderNumber = '2'; break;
       case 'dave': bidderNumber = '3'; break;
+      case 'Dave': bidderNumber = '3'; break;
       case 'joel': bidderNumber = '4'; break;
+      case 'Joel': bidderNumber = '4'; break;
       case 'mike': bidderNumber = '5'; break;
+      case 'Mike': bidderNumber = '5'; break;
       case 'pat': bidderNumber = '6'; break;
+      case 'Pat': bidderNumber = '6'; break;
       case 'steve': bidderNumber = '7'; break;
+      case 'Steve': bidderNumber = '7'; break;
       case 'todd': bidderNumber = '8'; break;
+      case 'Todd': bidderNumber = '8'; break;
       case 'tristan': bidderNumber = '9'; break;
+      case 'Tristan': bidderNumber = '9'; break;
       case 'tyler': bidderNumber = '10'; break;
+      case 'Tyler': bidderNumber = '10'; break;
       case 'wilson': bidderNumber = '11'; break;
+      case 'Wilson': bidderNumber = '11'; break;
       default: bidderNumber = '12'; break;
   }
 
